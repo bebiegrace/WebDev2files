@@ -1,0 +1,320 @@
+*{
+    padding:0;
+    box-sizing: border-box;  
+}
+body{
+    background-color: rgb(185, 180, 179);
+    margin-top:100px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+header{
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgb(248, 213, 203); 
+    position: fixed;
+    }
+ header .logo{
+    position: relative;
+    margin-left: 40px;
+    
+    }
+header .navigation{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    }
+ header .navigation li{
+    list-style: none;
+    margin:0 10px;
+    }
+header .navigation li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: 0.6s ease;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    
+}
+header .navigation li a:hover{
+    color: red;
+    background-color: rgb(250, 186, 175);
+    padding:30px;
+}
+ header .search{
+    position:relative;
+    width: 250px;
+    height: 40px;
+    margin-top:0px;
+    }
+header .search input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    color: rgb(255, 230, 230);
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(206, 103, 103);
+    border-radius: 4px; 
+    padding: 0 10px 0 45px;  
+    } 
+header .search input::placeholder{
+    color: rgb(212, 139, 139);
+    font-size: 20px;
+    }
+header .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgb(240, 74, 74);
+    border-right: 1px solid palevioletred;
+    padding-right:10px;
+ 
+}
+.sales1{
+    margin-top: 100px;
+    text-align: center;
+    padding:0px;
+}
+h1{
+    color:rgb(255, 252, 250);
+    font-size: 35px;
+}
+h2{
+    color: rgb(255, 252, 250);
+    font-size: 25px;
+}
+p{
+    color: rgb(255, 252, 250);
+    font-size: 20px;
+}
+strong{
+    font-size: 30px;
+    color: rgb(255, 252, 250);
+}
+.all_sales{
+    padding: 20px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 195, 187);
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.sales_photo{
+    float: left;
+    padding:0px;
+}
+.sales_photo a{
+    text-decoration: none;
+    color:#000;
+    padding: 10px 20px;
+	border: 1px solid rgb(224, 40, 40);
+	transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color:rgb(238, 100, 90);
+    margin-bottom: 20px;
+}
+.sales_photo a:hover{
+    background-color: rgb(224, 178, 125);
+    text-decoration: none;
+    color: rgb(190, 52, 10);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium';
+    border: 1px solid rgb(230, 29, 29);
+    transition: 0.6s ease;
+}
+.sales_image{
+    float: center;
+    padding:10px;
+}
+.sales_image a{
+    text-decoration: none;
+    color:#000;
+    padding: 10px 20px;
+	border: 1px solid rgb(224, 40, 40);
+	transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color:rgb(238, 100, 90);
+    margin-bottom: 20px;
+   
+}
+.sales_image a:hover{
+    background-color: rgb(224, 178, 125);
+    text-decoration: none;
+    color: rgb(190, 52, 10);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium';
+    border: 1px solid rgb(230, 29, 29);
+    transition: 0.6s ease;
+}
+
+.sales_image1{
+    float: right;
+    padding:0px;
+}
+.sales_image1 a{
+    text-decoration: none;
+    color:#000;
+    padding: 10px 20px;
+	border: 1px solid rgb(224, 40, 40);
+	transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color:rgb(238, 100, 90);
+}
+.sales_image1 a:hover{
+    background-color: rgb(224, 178, 125);
+    text-decoration: none;
+    color: rgb(190, 52, 10);
+    border: 1px solid burlywood;
+    transition: 0.6s ease;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium';
+}
+.sales_image .links{
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+.sales_image1 .links{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.sales_photo .links{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+footer{
+    height: 11%;
+    bottom:0;
+    left:0;
+    width:100%;
+    display: flex;
+    padding:0px;
+    z-index:10px;
+    background:rgb(245, 169, 148);
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+} 
+footer li{
+    color:rgb(12, 11, 10);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;;
+    display:inline-block;
+    font-size: 15px;
+}
+
+  
+@media (max-width: 995px)
+{
+    header
+    {
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom: 60px;
+        position:fixed;
+        width:100%;
+        margin:auto;
+    }
+    .navigation li a{
+        margin-top: 30px;
+   }
+    header .search{
+        margin-top: 0px;
+    }
+    header .logo{
+        position: relative;
+        margin-bottom: 20px;
+        margin-left:0px;
+    }
+    header .navigation .home{
+        margin-bottom:25px;
+    }
+    header .navigation .about{
+        margin-bottom:25px;
+    }
+    header .navigation .sales{
+        margin-bottom:25px;
+    }   
+    header .navigation .photos{
+        margin-bottom:25px;
+    }  
+    header .navigation .services{
+        margin-bottom:25px;
+    }
+    .all_sales{
+        width:100%;
+        display:flex;
+        padding:0px;
+        margin: auto;
+        margin-bottom: 90px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sales1{
+        margin-top: 280px;
+        text-align: center;
+        padding:0px;
+    }
+    footer{
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom:0px;
+    }
+    .sales .logo3{
+        position: relative;
+        width:100%;
+        margin:auto;
+        justify-content: center;
+        margin-top: 350px;
+    
+        
+    }
+    .sales .photo a{
+        width:100%;
+        margin:auto;
+
+    }
+    .sales_photo{
+        widows: 100%;
+        margin:auto;
+    }
+    .sales_image{
+        widows: 100%;
+        margin:auto;
+    }
+    .sales_image1{
+        widows: 100%;
+        margin:auto;
+
+    }
+}
+
+
+
+
+
+
+
+
+   
+   

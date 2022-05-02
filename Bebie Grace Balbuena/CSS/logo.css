@@ -1,0 +1,323 @@
+
+*{
+    padding:0;
+    box-sizing: border-box;  
+}
+body{
+    background-color:  rgb(185, 180, 179);
+    margin-top:100px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+header{
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(248, 213, 203);
+   
+    position: fixed;
+ }
+ header .logo{
+    position: relative;
+    margin-left: 40px;
+
+ }
+ header .navigation{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+ }
+ header .navigation li{
+    list-style: none;
+    margin:0 10px;
+ }
+ header .navigation li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: 0.6s ease;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+
+ }
+ header .navigation li a:hover{
+    color: red;
+    background-color: rgb(250, 186, 175);
+    padding:30px;
+ }
+ header .search{
+    position:relative;
+    width: 250px;
+    height: 40px;
+ }
+ header .search input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    color: rgb(255, 230, 230);
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(206, 103, 103);
+    border-radius: 4px; 
+    padding: 0 10px 0 45px;  
+ } 
+ header .search input::placeholder{
+    color: rgb(212, 139, 139);
+    font-size: 20px;
+}
+header .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgb(240, 74, 74);
+    border-right: 1px solid palevioletred;
+    padding-right:10px;
+}
+.name{
+    width: 700px;
+    background-color: rgba(240, 81, 53, 0.63);
+    margin: auto;
+    color:black;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius:15px 15px 0px 0px;
+    margin-top: 170px;
+}
+.container{
+    background-color:rgba(248, 118, 118, 0.397);
+    width:700px;
+    margin:auto; 
+    float: center;
+    margin-bottom: 100px;
+    text-align: center;
+    border-color: rgb(144, 11, 11);
+}
+form{
+    text-align: center;
+}
+
+.fname{
+    text-align: center;
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-right: 20px;
+    position:relative;
+    font-size: 20px;
+    font-weight:700;
+    background-color:rgb(230, 153, 125);
+    color: black;
+}
+.location{
+    text-align: center;
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-right: 20px;
+    position:relative;
+    font-size: 20px;
+    font-weight:700;
+    background-color:rgb(230, 153, 125);
+    color: black;
+}
+.number{
+    text-align: center;
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-right: 20px;
+    position:relative;
+    font-size: 20px;
+    font-weight:700;
+    background-color:rgb(230, 153, 125);
+    color: black;
+}
+.browser{
+    text-align: center;
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-right: 20px;
+    position:relative;
+    font-size: 20px;
+    font-weight:700;
+    background-color:rgb(230, 153, 125);
+    color: black;
+}
+.submit{
+    text-align: center;
+    margin-top: 20px;
+    width:500px;
+    height:50px;
+    margin-right: 20px;
+    position:relative;
+    font-size: 20px;
+    font-weight:700;
+    margin-bottom: 40px;
+    background-color:rgb(236, 101, 51);
+    color: black;
+}
+footer{
+    height: 11%;
+    bottom:0;
+    left:0;
+    width:100%;
+    display: flex;
+    padding:0px;
+    z-index:10px;
+    background:rgb(245, 169, 148);
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+} 
+footer li{
+    color:rgb(12, 11, 10);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;;
+    display:inline-block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+   
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(241, 72, 72);
+  }
+  
+  .facebook {
+    background: rgb(42, 69, 128);
+    color: white;
+  }
+  
+  .twitter {
+    background: rgb(52, 149, 223);
+    color: white;
+  }
+  
+  .google {
+    background: #e22e16;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #9b0303;
+    color: white;
+  }
+@media (max-width: 995px)
+{
+    header
+    {
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .navigation li a{
+        margin-top: 30px;
+   }
+    header .search{
+        margin-top: 0px;
+    }
+    header .logo{
+        position: relative;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    header .navigation .home{
+        margin-bottom:25px;
+    }
+    header .navigation .about{
+        margin-bottom:25px;
+    }
+    header .navigation .sales{
+        margin-bottom:25px;
+    }   
+    header .navigation .photos{
+        margin-bottom:25px;
+    }  
+    header .navigation .services{
+        margin-bottom:25px;
+    }    
+    .name{
+        width:100%;
+        margin:auto;
+        margin-top: 300px;
+    }
+    .container{
+        margin-top:200px;
+        width:100%;
+        margin:auto;
+    }
+    .form{
+        padding: 10px 20px;
+        flex-direction: column;
+        margin-bottom: 60px;
+        width:100%;
+        margin:auto;
+        margin-top: 250px;
+    }
+    .fname{
+        width:100%;
+        margin:auto;
+    }
+    .location{
+        width:100%;
+        margin:auto;
+
+    }
+    .number{
+        width:100%;
+        margin:auto;
+    }
+    .browser{
+        width:100%;
+        margin:auto;
+    }
+    .submit{
+        width:100%;
+        margin:auto;
+    }
+    footer{
+        padding: 15px 15px;
+        flex-direction: column;
+        margin-bottom:0px;
+
+    }
+}
+
+
+

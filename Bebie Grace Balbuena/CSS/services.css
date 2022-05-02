@@ -1,0 +1,234 @@
+*{
+    padding:0;
+    box-sizing: border-box;  
+}
+body{
+    background-color:  rgb(185, 180, 179);
+    margin-top:100px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+header{
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgb(248, 213, 203); 
+    position: fixed;
+ }
+ header .logo{
+    position: relative;
+    margin-left: 40px;
+
+ }
+ header .navigation{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+ }
+ header .navigation li{
+    list-style: none;
+    margin:0 10px;
+ }
+ header .navigation li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: 0.6s ease;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+
+ }
+ header .navigation li a:hover{
+    color: red;
+    background-color: rgb(250, 186, 175);
+    padding:30px;
+ }
+ header .search{
+    position:relative;
+    width: 250px;
+    height: 40px;
+ }
+ header .search input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    color: rgb(255, 230, 230);
+    font-size: 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(206, 103, 103);
+    border-radius: 4px; 
+    padding: 0 10px 0 45px;  
+ } 
+ header .search input::placeholder{
+    color: rgb(212, 139, 139);
+    font-size: 20px;
+}
+header .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgb(240, 74, 74);
+    border-right: 1px solid palevioletred;
+    padding-right:10px;
+}
+.service{
+    padding: 20px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 195, 187);
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.service2{
+    padding:20px;
+    text-align: justify;
+    background-color: rgb(243, 178, 178);
+    width:40%;
+    margin-top: 60px;
+    border-radius:10px;
+    display: inline-block;
+    
+}
+ .active{
+    text-decoration: none;
+    color:rgb(255, 109, 109);
+    font-size: 30px;
+    font-weight: bold;
+}
+ .active:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: 1px solid rgb(238, 167, 167);
+    transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color:rgb(243, 208, 207); 
+}
+p{
+    font-size: 20px;
+}
+.video{
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+}
+strong{
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    height: 11%;
+    bottom:0;
+    left:0;
+    width:100%;
+    display: flex;
+    padding:0px;
+    z-index:10px;
+    background:rgb(245, 169, 148);
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+} 
+footer li{
+    color:rgb(12, 11, 10);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;;
+    display:inline-block;
+    font-size: 15px;
+}
+.icon-bar {
+    position: fixed;
+    top: 75%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+   
+  }
+  
+  
+
+@media (max-width: 995px)
+{
+    header
+    {
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .sales1{
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom: 60px;
+        margin-top: 340px;
+    }
+    .navigation li a{
+        margin-top: 30px;
+   }
+    header .search{
+        margin-top: 0px;
+    }
+    header .logo{
+        position: relative;
+        margin-bottom: 20px;
+        margin-left:0px;
+    }
+    header .navigation .home{
+        margin-bottom:25px;
+    }
+    header .navigation .about{
+        margin-bottom:25px;
+    }
+    header .navigation .sales{
+        margin-bottom:25px;
+    }   
+    header .navigation .photos{
+        margin-bottom:25px;
+    }  
+    header .navigation .services{
+        margin-bottom:25px;
+    }
+    footer{
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom:0px;
+    }
+    .service{
+        flex-direction: column;
+        width:100%;
+        margin:auto;
+        display: inline-flex;
+        margin-top: 200px;
+        margin-bottom:75px;
+    }
+    
+}
+@media (max-width: 995px)
+{
+    iframe{
+        width:100%;
+        margin:auto;
+
+    }
+    .service2{
+        width:90%;
+        margin:auto;
+    }
+}

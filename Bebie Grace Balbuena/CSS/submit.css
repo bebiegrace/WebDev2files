@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(143, 123, 99);  
+    margin:0px;
+}
+.menu{
+    float: right;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+.menu :hover{
+    background-color: #ffe4c4;
+    color:rgb(3, 3, 3);
+}   
+ul li{
+    display:inline-block;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color:#000;
+    padding: 10px 20px;
+	border: 1px solid rgb(222, 184, 135);
+	transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(235, 119, 115);
+}
+.logo:hover {
+    background-color:none;
+}
+.logo{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: fixed;
+}
+.name{
+    padding: 5px;
+    background-color: none;
+    margin-top: 120px;
+    text-align: center;
+}
+h2{
+    color:rgb(129, 41, 8);
+    font-size: 50px;
+}
+p{
+    color:rgb(150, 63, 31);
+    font-size: 30px;
+}

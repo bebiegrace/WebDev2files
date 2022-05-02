@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>JabFashionCare</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">JabFashionCare</a>
+      <div class="navbar__toggle" id="mobile-menu">
+
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="home.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">About Us</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#categories" class="navbar__links" id="categories-page">Categories</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__links" id="contact-page">Contact Us</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#reviews" class="navbar__links" id="reviews-page">Reviews</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Categories Section -->
+  <div class="categories" id="categories">
+      <h1>All Categories</h1>
+    <div class="cat_container">
+      <h2>Welcome Customers!</h2>
+  
+      <div class="korean">
+  
+      </div>
+      <div class="american">
+        
+      </div>
+      <div class="philippines">
+        
+      </div>
+  
+    </div>
+    </div>
+
+  <!-- About Section -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+      </div>
+      <div class="main__content">
+        <h1>What do we do?</h1>
+        <h2>We help businesses scale</h2>
+        <p>Schedule a call to learn more about our services</p>
+        <button class="main__btn"><a href="#">Schedule Call</a></button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!--Contact Section -->
+
+  <div class="contact" id="contact">
+    <h1>How can we help?</h1>
+    <div class="container">
+      <h2>Contact us </h2>
+      <p>We are happy to accept your messages!</p>
+      <div class="container2">
+        <div class="container3">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="phillipines">Philippines</option>
+              <option value="southkorea">South Korea</option>
+              <option value="southkorea">Africa</option>
+              <option value="southkorea">Singapore</option>
+              <option value="usa">USA</option>
+            </select><br>
+
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea><br>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+
+        <div class="vl"></div>
+        <div class="team_container">
+          <div class="team">
+            <h2>Meet our Brilliant Team</h2>
+            <p>Live support available from Monday-Saturday 7:00am-6:30pm</p>
+            <button> <img class="team1" src="mee.jpg" alt="Avatar" style="width:150px" onclick="image(event, 'bebie')"></button>
+            <button> <img class="team1" src="max.png" alt="Avatar" style="width:150px; height: 150px;" onclick="image(event, 'jmarie')"></button>
+            <button> <img class="team1" src="cons.jpg" alt="Avatar" style="width:150px; height: 150px;" onclick="image(event, 'allysa')"></button>
+          </div>
+          <div class="my_icons">
+            <ul>
+              <h2>Our Contacts</h2>
+              <li>Email: jabfashioncare@gmail.com</li>
+              <li>Phone:09285420417</li>
+              <li>Facebook Page: JAB Fashion Care</li>
+              <li>Location: Nasipit, Talamban, Ceby City, Samjung Building</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="social_icons">
+      <a href="http://facebook.com" class="fa fa-facebook"></a>
+      <a href="http://twitter.com" class="fa fa-twitter"></a>
+      <a href="http://google.com" class="fa fa-google"></a>
+      <a href="http://linkedin.com" class="fa fa-linkedin"></a>
+      <a href="http://youtube.com" class="fa fa-youtube"></a>
+      <a href="http://instagram.com" class="fa fa-instagram"></a>
+      <p>Login to social media</p>
+    </div>
+  </div>
+
+
+  <!--Reviews Section -->
+
+  <div class="reviews" id="reviews">
+    <h1>Reviews</h1>
+    <div class="reviews__wrapper">
+      <div class="reviews__card">
+        <h2>Maxima lang malakas to the bones</h2>
+        <p>AI Powered technology</p>
+        <div class="reviews__btn"><button>Get Started</button></div>
+      </div>
+      <div class="reviews__card">
+        <h2>Are you Ready?</h2>
+        <p>Take the lepa</p>
+        <div class="reviews__btn"><button>Get Started</button></div>
+      </div>
+      <div class="reviews__card">
+        <h2>Full Gradients</h2>
+        <p>100 Combinations</p>
+        <div class="reviews__btn"><button>Get Started</button></div>
+      </div>
+      <div class="reviews__card">
+        <h2>Infinite Choices</h2>
+        <p>1000's of colors</p>
+        <div class="reviews__btn"><button>Get Started</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+          <a href="/">Careers</a> <a href="/">Terms of Service</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/">Contact</a> <a href="/">Support</a>
+          <a href="/">Destinations</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Videos</h2>
+          <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+          <a href="/">Agency</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a> <a href="/">Facebook</a>
+          <a href="/">Youtube</a> <a href="/">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">COLOR</a>
+        </div>
+        <p class="website__rights">© COLOR 2020. All rights reserved</p>
+        <div class="social__icons">
+          <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

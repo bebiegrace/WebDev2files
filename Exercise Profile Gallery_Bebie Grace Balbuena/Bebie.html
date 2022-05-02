@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <title>Bebie Gallery</title>
+  </head>
+  <style>
+    Body{
+      background-image: url("1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    header{
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(77, 66, 63, 0.295); 
+    position: fixed;
+    z-index: 1;
+    }
+    header .logo{
+      position: relative;
+      margin-left: 40px;
+  
+    }
+     header .bebie ul li{
+      list-style-type: none;
+      align-items: center;
+      color: rgb(255, 255, 255);
+    }
+
+    .art{
+      text-align: center;
+      color: coral;
+      margin-top: 150px;
+    }
+    h2{
+      color:rgb(255, 182, 155);
+    }
+    h3{
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      font-size: 40px;
+      color:rgb(207, 124, 0);
+    }
+    p{
+      font-family: 'Lobster', cursive;
+      color: rgb(0, 0, 0);
+    }
+    .images{
+      text-align: center;
+      cursor: pointer;
+      padding: 30px 25px;
+      display: block;
+    }
+    .artist1 :hover{
+      padding: 10px;
+      transition: 0.10s ease;
+      
+    
+    }
+    .idols{
+      display: none;
+      padding: 6px 5px;
+      width:80%;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-top: none;
+      background-color: rgba(255, 192, 203, 0.24);
+      color:rgb(3, 3, 3);
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    button{
+      background-color: rgba(226, 120, 94, 0.993);
+      transition: 0.10s ease;
+    }
+
+  
+  </style>
+
+  <body>
+    <header>
+        <a href="logo.html" class="logo"><img src="icon.jpg" width="100px" height="50px"/></a>
+       <div class="bebie">       
+        <ul>
+          <li>Welcome friends!!</li>
+          <li>Meet my idols here!</li>
+        </ul>
+       </div>
+
+    </header>
+
+      <div class="art">
+      <h1 id="artist">One of the most famous people in the world!!!</h1>
+      <h2 id="artists">Let's get to know them better!</h2>
+      </div>
+
+      <div class="images" >
+    
+         <button><img class="artist1" src="cath.jpg" height="250" width="200" onclick="image(event, 'kath')"></button> 
+         <button> <img class="artist1" src="cha.jpg" height="250" width="200" onclick="image(event, 'Cha')"></button> 
+         <button> <img class="artist1" src="selena.jpg" height="250" width="200"onclick="image(event, 'sel')"></button> 
+         <button> <img class="artist1" src="kim.jpg" height="250" width="200" onclick="image(event, 'kim')"></button> 
+         <button> <img class="artist1" src="liza.jpg" height="250" width="200" onclick="image(event, 'liz')"></button> 
+      </div>
+       
+
+        <div id="kath" class="idols">
+          <h3>Kathryn Bernardo</h3>
+           <ul>
+              <li>Born: March 26, 1996</li>
+              <li>Height: 1.57 m</li>
+              <li>Full name: Kathryn Chandria Manuel Bernardo </li>
+              <li>Sex: Female</li>
+              <li>Country: Philippines</li>
+          </ul>
+          <p> Kathryn Chandria Manuel Bernardo is a Filipina actress who is known for her roles in the television series Mara Clara, Pangako Sa 'Yo, and La Luna Sangre.
+              Bernardo began acting in 2003, appearing as the young Cielo on ABS-CBN's It Might Be You.
+               In 2006, she landed her first main role in the TV series Super Inggo playing Maya, the love interest of the main character. 
+               She then continued to play different roles in other ABS-CBN shows such as Krystala and Vietnam Rose before landing a permanent 
+               spot on the hit kiddie show Goin' Bulilit. </p>
+        
+         </div>
+
+         <div id="Cha" class="idols">
+            <h3>Cha Eun Woo</h3>
+            <ul>
+               <li>Born: March 30, 1997</li>
+               <li>Height: 1.83 m</li>
+               <li>Full name: Lee Dong-Min</li>
+               <li>Sex: Male</li>
+               <li>Country: South Korea</li>
+            </ul>
+          <p> Lee Dong-Min, professionally known as Cha Eun-Woo,
+           is a South Korean Singer, actor, and model under the label
+           of Fantagio. He is a member of the South Korean boy group
+            Astro. Astro debuted on February 23, 2016, with the EP Spring Up.
+             In August, Cha participated in the Chuseok special variety show, Replies That Make Us Flutter.
+             In September, he participated in another Chuseok pilot program, Boomshakalaka.
+
+            Cha was announced as the MC of the show Show! Music Core alongside Kim Sae-ron ,Lee Soo-min and Xiyeon, 
+            which he hosted from 2016 to 2018. The same year, he starred in the web drama My Romantic Some Recipe.</p>
+
+         </div>
+
+          <div id="sel" class="idols">
+           <h3>Selena Gomez</h3>
+            <ul>
+               <li>Born: July 22. 1992</li>
+               <li>Height: 1.65 m</li>
+               <li>Full name: Selena Marie Gomez</li>
+               <li>Sex: Female</li>
+               <li>Country: America</li>
+            </ul>
+          <p>Selena Marie Gomez is an American singer, actress, and producer. She has been regarded as a “triple threat”. 
+            Born and raised in Texas, Gomez began her acting career on the children television series Barney & Friends.
+            As of 2017, Gomez has sold over seven million albums and 22 million singles worldwide, according to Billboard. 
+            She has received various accolades and was named Billboard's Woman of the Year in 2017. 
+            She has a large following on social media and is the most followed musician and actress on Instagram. Gomez's other ventures include makeup, clothing, handbag and fragrance lines. 
+            She has worked with many charitable organizations and served as a UNICEF ambassador since age 17. </p>
+
+          </div>
+
+          <div id="kim" class="idols">
+              <h3>Kim Domingo</h3>
+
+           <ul>
+              <li>Born: February 3, 1995</li>
+              <li>Height: 1.7 m</li>
+              <li>Full name: Kim Domingo</li>
+              <li>Sex: Female</li>
+              <li>Country: Philippines</li>
+              </ul>
+              <p> Kim Domingo, is a Filipina actress, model, singer, Internet personality, and television presenter.
+                  She is well known for playing the leading antagonist in Juan Happy Love Story, Tsuperhero and Super Ma’am.
+                  She is currently a GMA Network contract artist. Domingo rose to prominence with her dubsmash of the song "Twerk It Like Miley" in 2014.
+                  She signed a contract with GMA Network's talent agency the following year, and landed roles on Juan Happy Love Story and Bubble Gang, where she is currently a mainstay.
+                  Domingo appeared on the cover of FHM Philippines' December 2015 and January 2017 issues.</p>
+           </ul>
+          </div>
+
+          <div id="liz" class="idols">
+            <h3>Liza Soberano</h3>
+            <ul>
+               <li>Born: January 4, 1998</li>
+               <li>Height: 1.68 m</li>
+               <li>Full name: Hope Elizabeth Soberano</li>
+               <li>Sex: Female</li>
+               <li>Country: Philippines</li>
+            </ul>
+           <p> Hope Elizabeth “Liza” Soberano is a Filipino-American actress, model, singer and endorser. 
+             She started in a range of television series and films, including Wansapanataym, Kung Ako’y Iiwan Mo, She’s the one, Must Be Love.
+             She was offered modeling work for print ads at the age of 12 after moving to Manila.
+              She was discovered by a talent scout at the age of 13 and introduced to Ogie Diaz, her new talent manager.
+             Her talent manager urged her to learn Filipino so she could land successful television and film projects because she couldn't speak the language at the time.
+             Soberano made her acting debut in the anthology series Wansapanataym (2011).
+              She then had a minor role as Claire Raymundo in Kung Ako'y Iiwan Mo (2012). 
+              Soberano then played the role of Angel in Daniel Padilla and Kathryn Bernardo's premier movie Must Be... Love. 
+              In 2013 she also starred as Gillian in She's the One with Bea Alonzo, Dingdong Dantes and Enrique Gil.
+              A year later in 2014, she joined the primetime television series Got to Believe as Padilla's other love interest. </p>
+      
+           </div>
+         <script>
+
+          function image(evt, Name) {
+             var i, idols, artist1;
+             idols = document.getElementsByClassName("idols");
+             for (i = 0; i < idols.length; i++) {
+             idols[i].style.display = "none";
+            }
+            artist1 = document.getElementsByClassName("artist1");
+            for (i = 0; i < artist1.length; i++) {
+            artist1[i].className = artist1[i].className.replace(" active", "");
+            }
+            document.getElementById(Name).style.display = "block";
+            evt.currentTarget.className += "active";
+            }
+
+      </script>
+  </body>
+</html>

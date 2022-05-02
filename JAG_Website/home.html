@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JabFashionCare</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">JabFashionCare</a>
+        <div class="navbar__toggle" id="mobile-menu">
+
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="home.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links" id="about-page">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="categories.html" class="navbar__links" id="categories-page">Categories</a>
+          </li>
+           <li class="navbar__item">
+            <a href="contact.html" class="navbar__links" id="contact-page">Contact Us</a>
+          </li>
+           <li class="navbar__item">
+            <a href="reviews.html" class="navbar__links" id="reviews-page">Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+       <div class="jab" id="home">
+
+  <!--shop now Section -->
+           <div class="navbar__btn">
+           <button  class="main__btn" onclick="document.getElementById('id0').style.display='block'" style="width:auto;">Shop now!</button>   
+           </div> 
+        <div id="id0" class="modal-shopnow">
+             <span onclick="document.getElementById('id0').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content-shopnow" action="/action_page.php">
+            <div class="container-shopnow">
+             <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+             <hr>
+             <label for="email"><b>Email</b></label>
+             <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+             <label>
+           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+             </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+           <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id0').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+           
+          <div class="photos">
+            <img src="girl.png" class= "girl" width="300px" height="700px" />
+            <img src="boy.png" class="boy" width="300px" height="700px" /> 
+          </div>
+
+         <div class="jab__container">
+             <h1 class="jab__heading">Find Your Own Style With <span>JAB!</span>!</h1>
+
+               <!-- Login form section -->
+
+          <button  class="main__btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+          <div id="id01" class="modal">
+  
+          <form class="modal-content animate" action="/action_page.php" method="post">
+
+              <div class="imgcontainer">
+               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+               <img src="avatar.png" alt="Avatar" class="avatar">
+              </div>
+
+               <div class="container">
+
+               <label class="names" for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label class="names" for="psw"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <button type="submit">Login</button>
+
+              <label>
+                <input class="rememberme" type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              </div>
+
+               <div class="container_a" >
+                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                 <span class="psw">Forgot <a href="#">password?</a></span>
+               </div>
+             </form>
+           </div>
+
+              <!-- Signup section -->
+
+      <button  class="main__btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+        <div id="id02" class="modal_signup">
+
+         <form class="modal-contentsignup" action="/action_page.php" method="post">
+
+          <div class="imgcontainer">
+               <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+               <img src="avatar.png" alt="Avatar" class="avatar">
+         </div>
+
+        <div class="container_signup">
+        <h3>Sign Up</h3>
+        <h2>Please fill in this form to create an account.</h2>
+         <hr>
+         <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="username"><b>Mobile Number</b></label>
+        <input type="text" placeholder="Enter Mobile Number" name="mobilenumber" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn_signup">Cancel</button>
+        <button type="submit" class="signupbtn">Save</button>
+      </div>
+    </div>
+  </form>
+</div>
+            
+            <p class="jab__quotes">Love your fashion just like how you love yourself</p>              
+       </div>
+             
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Categories</a> <a href="/">South Korean Fashion</a>
+            <a href="/">American Fashion</a><a href="/">Filipino Fashion</a>
+             <a href="/">Japanese Fashion</a><a href="/">Italian Fashion</a>
+             <a href="/">Chinese Fashion</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Our Services</a> <a href="/">Our Products</a>
+          
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Facebook</a> <a href="/">Twitter</a>
+            <a href="/">Instagram</a> <a href="/">Tiktok</a>
+             <a href="/">Youtube</a><a href="/">WhatsApp</a>
+            
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">JAB Fashion Care</a>
+          </div>
+          <p class="website__rights">© JAB Fashion Care 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+              <a href="/" class="social__icon--link"
+            ><i class="fab fa-tiktok"></i></a>
+
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              >
+          <i class="fab fa-whatsapp"></i></a>                  
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

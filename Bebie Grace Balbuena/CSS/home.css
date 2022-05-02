@@ -1,0 +1,295 @@
+
+ *{
+    padding:0;
+     box-sizing: border-box;  
+}
+ body{
+    background-image:url(../gb1.jpg);  
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+ header{
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(248, 213, 203, 0.603); 
+    position: fixed;
+    z-index: 1;
+    }
+ header .logo{
+    position: relative;
+    margin-left: 40px;
+    
+    }
+    header .navigation{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    }
+    header .navigation li{
+        list-style: none;
+        margin:0 10px;
+     }
+     header .navigation li a{
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 5px 5px;
+        transition: 0.6s ease;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    
+     }
+     header .navigation li a:hover{
+        color: red;
+        background-color: rgb(250, 186, 175);
+        padding:30px;
+     }
+     header .search{
+        position:relative;
+        width: 250px;
+        height: 40px;
+     }
+     header .search input{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        color: rgb(255, 230, 230);
+        font-size: 20px;
+        background: transparent;
+        outline: none;
+        border: 1px solid rgb(206, 103, 103);
+        border-radius: 4px; 
+        padding: 0 10px 0 45px;  
+     } 
+     header .search input::placeholder{
+        color: rgb(212, 139, 139);
+        font-size: 20px;
+    }
+    header .search .fa-search{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        color: rgb(240, 74, 74);
+        border-right: 1px solid palevioletred;
+        padding-right:10px;
+       
+    }
+.main{
+    padding: 5px;
+    width: 80%;
+    margin:auto;
+    margin-top: 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:none;
+    text-align: left;
+    border-radius: 6px;
+    margin-bottom:30px;
+  
+}
+.main .flip-card{
+    float:right;
+    margin-right: 20px;
+    width: 30%;
+    margin-top: 60px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: none;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+h1{
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+}
+h2{
+ color: rgb(255, 255, 255);
+ font-size: 35px;
+ font-family: cursive;
+}
+h3{
+color:rgb(255, 255, 255);
+font-size: 25;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    color: rgb(255, 249, 249);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup{
+    margin-bottom: 50px;
+}
+.signup li{
+    list-style-type: none;
+}
+.signup li a{
+    text-decoration: none;
+    color:rgb(255, 215, 222);
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    border: 1px solid rgb(206, 86, 86);
+    transition: 0.6s ease;
+    font-family: 'Franklin Gothic Medium';
+    background-color:rgba(236, 180, 178, 0.335);
+    border-radius: 6px;
+}
+.signup li a:hover{
+    color: red;
+    background-color: rgb(250, 186, 175);
+}
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+   
+  }
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+  }
+  
+  .icon-bar a:hover {
+    background-color: rgb(241, 72, 72);
+  }
+  
+  .facebook {
+    background: rgb(42, 69, 128);
+    color: white;
+  }
+  
+  .twitter {
+    background: rgb(52, 149, 223);
+    color: white;
+  }
+  
+  .google {
+    background: #e22e16;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #9b0303;
+    color: white;
+  }
+@media (max-width: 995px)
+{
+    header
+    {
+        padding: 10px 15px;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .navigation li a{
+        margin-top: 30px;
+   }
+    header .search{
+        margin-top: 30px;
+    }
+    header .logo{
+        position: relative;
+        margin-bottom: 20px;
+        margin-left:0px;
+    }
+    header .navigation .home{
+        margin-bottom:25px;
+    }
+    header .navigation .about{
+        margin-bottom:25px;
+    }
+    header .navigation .sales{
+        margin-bottom:25px;
+    }   
+    header .navigation .photos{
+        margin-bottom:25px;
+    }  
+    header .navigation .services{
+        margin-bottom:25px;
+    }
+    .main{
+        padding:10px;
+        flex-direction: column;
+        display:inline-block;
+        margin: auto;
+        text-align: center;
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .main .flip-card{
+       width:100%;
+       margin:auto;
+       justify-content: center;
+       margin-top: 280px;
+    }
+    h1{
+        margin-top: 200px;
+        padding: 0px;
+        display:column;
+    }
+    .main h1{
+        margin-top: 100px;
+        z-index:1px;
+    }
+   
+}
+
+
+
+

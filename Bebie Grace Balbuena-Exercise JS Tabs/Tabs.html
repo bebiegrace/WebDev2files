@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+<style>
+body {font-family: Arial;
+  background-image: url('1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #88a9cf;
+
+}
+.tab button {
+  background-color: rgb(87, 150, 231);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: rgb(248, 248, 248);
+}
+.tab button.active {
+  background-color: rgb(76, 108, 156);
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+.picture{
+  float:left;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+#Tab1{
+  padding-right: 50%;
+  padding-left: 50%;
+  position:relative;
+ 
+ 
+}
+#Tab1 h3{
+    font-size: 150px;
+    color:#0000006e;
+    float: right;
+    margin-top:140px;
+    font-family:  'Raleway', sans-serif;;
+}
+
+#Tab2 p{
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Tab2 h3{
+  font-size: 40px;
+}
+#Tab2{
+  padding: 10px;
+  margin-top: 150px;
+}
+.selena{
+  padding:5px;
+  text-align: center;
+  width: 50%;
+  float: right;
+  margin-right: 80px;
+  background-color: rgba(0, 255, 255, 0.274);
+}
+.picture1{
+  margin-left: 100px;
+}
+#Tab3{
+  text-align: center;
+  margin-top: 100px;;
+}
+#Tab3 h3{
+  font-size: 50px;
+}
+#Tab3 p{
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tab1')">Tab1</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab2')">Tab2</button>
+  <button class="tablinks" onclick="openCity(event, 'Tab3')">Tab3</button>
+</div>
+
+<div id="Tab1" class="tabcontent">
+  <h3>Selena Gomez</h3>
+  <img class="picture" src="sel.png" width=500px height="700px">
+</div>
+
+<div id="Tab2" class="tabcontent">
+  <div class="selena">
+    <h3>About Selena Gomez</h3>
+    <p>She is an actress and singer, Selena Gomez was born on July 22, 1992 in Grand Prairie, Texas. She is the daughter of Mandy Teefey and Ricardo Gomez. Her mother is of part Italian ancestry, and her father is of Mexican descent. She was named after Tejano singer Selena, who died in 1995.
+  </p>
+  </div>
+<img class="picture1" src="sel.png" width=500px height="500px">
+</div>
+
+<div id="Tab3" class="tabcontent">
+  <h3>Selena's Album</h3>
+  <p>Selena Gomez is releasing an entirely Spanish album after working 
+    on the passion project for years, but when is the new album coming out
+     and which songs can fans expect to hear?</p>
+  <p>Selena's new Spanish album is called REVELACIÓN (REVELATION).
+
+    The former Disney star has posted a string of stunning images on Instagram, but is yet to confirm which one of them is her album cover.
+    
+    Announcing the album's release, Selena tweeted: "REVELACIÓN, my first EP in Spanish, is now available for preorder. I’m so excited to share this with you, and so proud of my heritage." 
+    </p>
+    <p>Selena has already released ‘De Una Vez’ and ‘Baila Conmigo,’ so we know it’ll be an entirely Spanish tracklist on her new album.
+
+      She took to Instagram on March 2 to reveal the full tracklist:
+      
+      De Una Vez,
+      Buscando Amor,
+      Baila Conmigo featuring. Rauw Alejandro,
+      Dámelo To’ featuring Myke Towers,
+      Vicio,
+      Adiós,
+      Selfish Love featuring DJ Snake</p>
+      
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
