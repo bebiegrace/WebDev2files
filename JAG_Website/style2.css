@@ -526,20 +526,25 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding:  0;
+  padding: 0;
 }
-.help{
-  padding:5px;
-  background-image:url('con12.jpg');
-  overflow: hidden;
-  height:100%;
-  width:100%;
-}
+
 .help1{
+  padding:0px;
+  display:inline-block;
   background-color: #0000003f;
+  width:100%;
+
+}
+.help1 h2{
+  padding:0px;
+  float:left;
+  margin-left:600px;
+
 }
 
 .photo{
+ 
   padding:0px;
   float:left;
   width:50%;
@@ -554,7 +559,6 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 30px;
   font-size: 3.5rem;
 }
 
