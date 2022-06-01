@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>My Website</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span>J</span>AB <span>F</span>ASHION
+                            <span>C</span>ARE
+                        </h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li> <a href="home.html" data-after="Home">HOME</a></li>
+                        <li><a href="about.html" data-after="About">ABOUT US</a></li>
+                        <li><a href="cathegories.html" data-after="Projects">CATHEGORIES</a></li>
+                        <li><a href="reviews.html" data-after="testimonial">REVIEWS</a></li>
+                        <li><a href="contact.html" data-after="Contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1 style="color:rgb(190, 12, 6); font-size: 45px;"> Best Fashion, <span></span></h1>
+                <h1 style="font-size: 60px;">CHOOSE YOUR OWN STYLE <span></span> </h1>
+                <h1>w/ JAB FASHION CARE<span></span></h1>
+                <a href="cathegories.html" type="button" class="cta">Shop Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero2">
+        <div class="new">
+            <h2 style="color:rgb(204, 16, 16); font-size: 40px;">30% OFF!</h2>
+            <p style="font-size: 30px;">New Arrival</p>
+
+            <div class="row">
+                <div class="column">
+                  <img src="./img/newjeans.jpg" alt="Nature" onclick="myFunction(this);" style="width: 200px; height:170px;">
+                  <div class="overlay">JEANS</div>
+                </div>
+                <div class="column">
+                  <img src="./img/newtshirt.png" alt="Snow" onclick="myFunction(this);" style="width: 200px; height:170px">
+                  <div class="overlay">T-SHIRT</div>
+                </div>
+                <div class="column">
+                  <img src="./img/new3.webp" alt="Mountains" onclick="myFunction(this);" style="width: 200px; height:170px;">
+                  <div class="overlay">HODY</div>
+                </div>
+                <div class="column">
+                  <img src="./img/new5.jpg" alt="Lights" onclick="myFunction(this);" style="width: 200px; height:170px">
+                  <div class="overlay">JEANS</div>
+                </div>
+              </div>
+              
+              <!-- The expanding image container -->
+              <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
+              
+                <!-- Image text -->
+                <div id="imgtext"></div>
+              </div>
+<!-- 
+            <h2>30% OFF!</h2>
+            <p>New Arrival</p> -->
+            <!-- <div class="newcon">
+            <div class="containernew">
+                <img src="./img/newjeans.jpg" alt="Avatar" class="image">
+                <div class="overlay">My Name is John</div>
+            </div>
+            <div class="containernew">
+                <img src="./img/newtshirt.png" alt="Avatar" class="image">
+                <div class="overlay">My Name is John</div>
+            </div>
+            <div class="containernew">
+                <img src="./img/new3.webp"" alt="Avatar" class="image">
+                <div class="overlay">My Name is John</div>
+            </div>
+            <div class="containernew">
+                <img src="./img/new5.jpg"" alt="Avatar" class="image">
+                <div class="overlay">My Name is John</div>
+            </div> -->
+        <!-- </div> -->
+        </div>
+    </section>
+    <!-- End Hero Section  -->
+
+
+
+
+
+
+    <!-- Footer -->
+    <section id="footer">
+        <img src="jab35.jpg" class="footer-img">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>J</span>AB <span>F</span>ASHION
+                    <span>C</span>ARE
+                </h1>
+            </div>
+            <h2>Your Clothing Website</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+                </div>
+            </div>
+            <p>Copyright © 2022 <b>JAB FASHION CARE</b>. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
